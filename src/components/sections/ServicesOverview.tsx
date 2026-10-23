@@ -70,7 +70,7 @@ export function ServicesOverview() {
   return (
     <section className="bg-white" aria-labelledby="services-heading">
       <Container size="xl">
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export function ServicesOverview() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-text-primary leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-primary leading-tight"
           >
             Comprehensive Technology Services
           </motion.h2>
@@ -99,7 +99,7 @@ export function ServicesOverview() {
           </motion.p>
         </div>
 
-        <Grid columns={2} gap="lg" className="lg:grid-cols-3">
+        <Grid columns={2} gap="md" className="lg:grid-cols-3">
           {services.map((service, index) => (
             <Reveal key={service.id} threshold={0.1} delay={index * 0.08}>
               <motion.div
@@ -148,7 +148,7 @@ export function ServicesOverview() {
           ))}
         </Grid>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -12,7 +12,7 @@ import { projects } from '@/lib/data/projects';
 export function ProjectsPage() {
   return (
     <>
-      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-24 lg:pt-32 pb-16 lg:pb-24" aria-labelledby="projects-hero-heading">
+      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-20 lg:pt-28 pb-12 lg:pb-16" aria-labelledby="projects-hero-heading">
         <Container size="xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,7 @@ export function ProjectsPage() {
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
               Featured Work
             </span>
-            <h1 id="projects-hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary leading-tight mb-6">
+            <h1 id="projects-hero-heading" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary leading-tight mb-6">
               Selected Projects &{' '}
               <span className="text-primary-600">Case Studies</span>
             </h1>
@@ -34,9 +34,9 @@ export function ProjectsPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16 lg:py-24" aria-labelledby="projects-grid-heading">
+      <section className="bg-white py-12 lg:py-16" aria-labelledby="projects-grid-heading">
         <Container size="xl">
-          <Grid columns={1} gap="lg" className="lg:grid-cols-2">
+          <Grid columns={1} gap="md" className="lg:grid-cols-2">
             {projects.map((project, index) => (
               <Reveal key={project.id} threshold={0.1} delay={index * 0.08}>
                 <motion.div
@@ -112,7 +112,7 @@ export function ProjectsPage() {
             ))}
           </Grid>
 
-          <div className="mt-16 text-center">
+          <div className="mt-10 text-center">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

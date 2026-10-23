@@ -85,7 +85,7 @@ export function ContactPage() {
 
   return (
     <>
-      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-24 lg:pt-32 pb-16 lg:pb-24" aria-labelledby="contact-hero-heading">
+      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-20 lg:pt-28 pb-12 lg:pb-16" aria-labelledby="contact-hero-heading">
         <Container size="xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -96,7 +96,7 @@ export function ContactPage() {
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
               Get in Touch
             </span>
-            <h1 id="contact-hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary leading-tight mb-6">
+            <h1 id="contact-hero-heading" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary leading-tight mb-6">
               Let&apos;s Start a{' '}
               <span className="text-primary-600">Conversation</span>
             </h1>
@@ -108,9 +108,9 @@ export function ContactPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16 lg:py-24" aria-labelledby="contact-form-heading">
+      <section className="bg-white py-12 lg:py-16" aria-labelledby="contact-form-heading">
         <Container size="xl">
-          <Grid columns={1} gap="xl" className="lg:grid-cols-3">
+          <Grid columns={1} gap="lg" className="lg:grid-cols-3">
             <div className="lg:col-span-1">
               <Reveal threshold={0.1}>
                 <motion.div
@@ -157,7 +157,7 @@ export function ContactPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-red-800">Something Went Wrong</p>
-                        <p className="text-red-700 mt-1">Please try again or email us directly at hello@vyntor.com</p>
+                        <p className="text-red-700 mt-1">Please try again or email us directly at hello@vastverse.com</p>
                       </div>
                     </motion.div>
                   )}
@@ -317,10 +317,10 @@ export function ContactPage() {
                       <CardTitle className="mb-2">Email Us</CardTitle>
                       <CardDescription className="mb-4">Best for detailed inquiries</CardDescription>
                       <a
-                        href="mailto:hello@vyntor.com"
+                        href="mailto:hello@vastverse.com"
                         className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
                       >
-                        hello@vyntor.com
+                        hello@vastverse.com
                       </a>
                     </CardContent>
                   </Card>
@@ -402,9 +402,9 @@ export function ContactPage() {
         </Container>
       </section>
 
-      <section className="bg-background-secondary py-16 lg:py-24" aria-labelledby="faq-heading">
+      <section className="bg-background-secondary py-12 lg:py-16" aria-labelledby="faq-heading">
         <Container size="xl">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 id="faq-heading" className="text-3xl sm:text-4xl font-extrabold text-text-primary leading-tight mb-4">
               Frequently Asked Questions
             </h2>
@@ -460,3 +460,6 @@ export function ContactPage() {
     </>
   );
 }
+
+
+

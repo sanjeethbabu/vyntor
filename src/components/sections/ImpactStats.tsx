@@ -42,7 +42,7 @@ function AnimatedStat({ value, suffix }: { value: number; suffix: string }) {
 
 export function ImpactStats() {
   return (
-    <section className="home-stats" aria-label="VYNTOR impact at a glance">
+    <section className="home-stats" aria-label="vastverse impact at a glance">
       <Container size="xl">
         <dl className="home-stats__grid">
           {impactStats.map(({ value, suffix, label }) => (
@@ -56,3 +56,6 @@ export function ImpactStats() {
     </section>
   );
 }
+
+
+

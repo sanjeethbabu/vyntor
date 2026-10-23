@@ -1,9 +1,9 @@
 import { Hero } from '@/components/sections/Hero';
 import { ImpactStats } from '@/components/sections/ImpactStats';
 import { Expertise } from '@/components/sections/Expertise';
-import { HowWeWork } from '@/components/sections/HowWeWork';
-import { WhyChooseVyntor } from '@/components/sections/WhyChoose';
+import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { Industries } from '@/components/sections/Industries';
+import { HowWeWork } from '@/components/sections/HowWeWork';
 import { CTA } from '@/components/sections/CTA';
 
 export default function Home() {
@@ -12,9 +12,9 @@ export default function Home() {
       <Hero />
       <ImpactStats />
       <Expertise />
-      <HowWeWork />
+      <WhatWeDo />
       <Industries />
-      <WhyChooseVyntor />
+      <HowWeWork />
       <CTA />
     </div>
   );

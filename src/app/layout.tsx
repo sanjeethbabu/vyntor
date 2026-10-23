@@ -21,12 +21,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vyntor.com'),
+  metadataBase: new URL('https://vastverse.com'),
   title: {
-    default: 'VYNTOR Technologies | Innovating Your Vision',
-    template: '%s | VYNTOR Technologies',
+    default: 'vastverse | Innovating Your Vision',
+    template: '%s | vastverse',
   },
-  description: 'VYNTOR Technologies helps businesses transform ideas into powerful software, AI-driven solutions, intelligent automation, and scalable digital products built for growth.',
+  description: 'vastverse helps businesses transform ideas into powerful software, AI-driven solutions, intelligent automation, and scalable digital products built for growth.',
   keywords: [
     'software development',
     'AI development',
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     'automation',
     'technology consulting',
   ],
-  authors: [{ name: 'VYNTOR Technologies' }],
-  creator: 'VYNTOR Technologies',
-  publisher: 'VYNTOR Technologies',
+  authors: [{ name: 'vastverse' }],
+  creator: 'vastverse',
+  publisher: 'vastverse',
   robots: {
     index: true,
     follow: true,
@@ -55,28 +55,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://vyntor.com',
-    siteName: 'VYNTOR Technologies',
-    title: 'VYNTOR Technologies | Innovating Your Vision',
+    url: 'https://vastverse.com',
+    siteName: 'vastverse',
+    title: 'vastverse | Innovating Your Vision',
     description: 'We turn bold ideas into intelligent digital solutions. Software development, AI, automation, and digital products for growth.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'VYNTOR Technologies',
+        alt: 'vastverse',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VYNTOR Technologies | Innovating Your Vision',
+    title: 'vastverse',
     description: 'We turn bold ideas into intelligent digital solutions.',
     images: ['/og-image.png'],
-    creator: '@vyntortech',
+    creator: '@vastversetech',
   },
   verification: {
     google: 'google-site-verification-code',
+  },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 };
 
@@ -104,3 +109,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

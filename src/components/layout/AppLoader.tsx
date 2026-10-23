@@ -26,7 +26,7 @@ export function AppLoader() {
           exit={{ opacity: 0 }}
           transition={{ duration: shouldReduceMotion ? 0 : EXIT_DURATION, ease: 'easeOut' }}
           role="status"
-          aria-label="Loading VYNTOR"
+          aria-label="Loading vastverse"
         >
           <div className="app-loader__content">
             <motion.div
@@ -35,7 +35,7 @@ export function AppLoader() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: shouldReduceMotion ? 0 : 0.55, ease: 'easeOut' }}
             >
-              <span className="app-loader__wordmark">vy<span className="brand-wordmark__arch" />tor</span>
+              <span className="app-loader__wordmark">vastverse</span>
             </motion.div>
             <div className="app-loader__track" aria-hidden="true">
               <span className="app-loader__progress" />
@@ -46,3 +46,6 @@ export function AppLoader() {
     </AnimatePresence>
   );
 }
+
+
+

@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/Layout';
 export function CareersPage() {
   return (
     <div className="bg-background-secondary">
-      <section className="relative isolate overflow-hidden bg-primary-50 px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
+      <section className="relative isolate overflow-hidden bg-primary-50 px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
         <div
           className="pointer-events-none absolute -right-24 -top-32 -z-10 h-96 w-96 rounded-full border border-primary-200 sm:right-8"
           aria-hidden="true"
@@ -18,9 +18,9 @@ export function CareersPage() {
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-white px-3.5 py-2 text-xs font-semibold tracking-wide text-primary-800">
               <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
-              Careers at VYNTOR
+              Careers at vastverse
             </span>
-            <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
               Join our team.
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
@@ -30,7 +30,7 @@ export function CareersPage() {
         </Container>
       </section>
 
-      <section className="px-4 py-8 sm:px-6 sm:py-12 lg:py-16">
+      <section className="px-4 py-6 sm:px-6 sm:py-10 lg:py-12">
         <Container size="xl">
           <div className="mx-auto max-w-3xl rounded-2xl border border-border-light bg-white p-6 shadow-[0_16px_50px_rgba(21,26,36,0.06)] sm:p-9 lg:p-10">
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-100 text-primary-800">
@@ -43,7 +43,7 @@ export function CareersPage() {
               We&apos;ll update this page when recruitment begins.
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-secondary sm:text-base">
-              Thanks for your interest in building a career with VYNTOR. Please check back later for new opportunities. We look forward to sharing updates when our recruiting process starts.
+              Thanks for your interest in building a career with vastverse. Please check back later for new opportunities. We look forward to sharing updates when our recruiting process starts.
             </p>
             <Link
               href="/contact"
@@ -59,3 +59,7 @@ export function CareersPage() {
     </div>
   );
 }
+
+
+
+

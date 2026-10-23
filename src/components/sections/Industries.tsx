@@ -9,7 +9,12 @@ import {
   GraduationCap, 
   Truck,
   LandPlot,
-  BarChart2
+  BarChart2,
+  Building2,
+  Laptop,
+  Smartphone,
+  Database,
+  Network
 } from 'lucide-react';
 import { Container, Grid } from '@/components/ui/Layout';
 import { Card, CardContent } from '@/components/ui/Card';
@@ -48,6 +53,17 @@ const industries = [
     icon: BarChart2,
     name: 'Finance & Business Operations',
   },
+  {
+    icon: Building2,
+    name: 'Healthcare & Hospitals',
+  },
+];
+
+const softwareApplications = [
+  { icon: Laptop, name: 'Web Applications', description: 'Customer portals, dashboards, admin panels' },
+  { icon: Smartphone, name: 'Mobile Apps', description: 'iOS, Android & cross-platform solutions' },
+  { icon: Database, name: 'ERP & CRM Systems', description: 'Business process automation & management' },
+  { icon: Network, name: 'SaaS Platforms', description: 'Multi-tenant products & subscription services' },
 ];
 
 export function Industries() {
@@ -93,6 +109,35 @@ export function Industries() {
             </Reveal>
           ))}
         </Grid>
+
+        <div className="mt-10">
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center text-lg font-semibold text-text-primary mb-6"
+          >
+            Digital Solutions We Build
+          </motion.h3>
+          <Grid columns={1} gap="sm" className="sm:grid-cols-2 lg:grid-cols-4">
+            {softwareApplications.map((app, index) => (
+              <Reveal key={app.name} threshold={0.1} delay={index * 0.08}>
+                <Card variant="interactive" padding="md" className="group h-full !rounded-xl">
+                  <CardContent className="flex flex-col items-center text-center gap-3">
+                    <div className={cn(
+                      'flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-all duration-300',
+                      'bg-primary-50 text-primary-700 group-hover:bg-primary-700 group-hover:text-white'
+                    )} aria-hidden="true">
+                      <app.icon className="h-5 w-5" />
+                    </div>
+                    <h4 className="text-sm font-semibold text-text-primary">{app.name}</h4>
+                    <p className="text-xs text-text-tertiary leading-snug">{app.description}</p>
+                  </CardContent>
+                </Card>
+              </Reveal>
+            ))}
+          </Grid>
+        </div>
       </Container>
     </section>
   );

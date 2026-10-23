@@ -3,7 +3,7 @@ import { ServicesPage } from '@/components/pages/ServicesPage';
 
 export const metadata: Metadata = {
   title: 'Services',
-  description: 'Explore VYNTOR Technologies\' comprehensive technology services — AI & intelligent automation, custom software development, web & mobile development, SaaS products, and digital growth solutions.',
+  description: 'Explore vastverse\'s comprehensive technology services — AI & intelligent automation, custom software development, web & mobile development, SaaS products, and digital growth solutions.',
 };
 
 interface ServicesPageProps {
@@ -14,3 +14,5 @@ export default async function ServicesPageWrapper({ searchParams }: ServicesPage
   const { category } = await searchParams;
   return <ServicesPage initialCategoryId={category} />;
 }
+
+

@@ -112,10 +112,10 @@ export function Header() {
           <Link
             href="/"
             className="flex items-center shrink-0 hover:opacity-80 transition-opacity"
-            aria-label="VYNTOR Technologies - Home"
+            aria-label="vastverse - Home"
           >
-            <span className="brand-lockup brand-lockup--navbar" aria-hidden="true">
-              <span className="brand-wordmark">vy<span className="brand-wordmark__arch" />tor</span>
+<span className="brand-lockup brand-lockup--navbar" aria-hidden="true">
+              <span className="brand-wordmark">vastverse</span>
               <span className="brand-tagline">innovation from vision</span>
             </span>
           </Link>
@@ -197,6 +197,7 @@ export function Header() {
               exit={{ opacity: 0, y: -8, scale: 0.99 }}
               transition={{ duration: 0.18, ease: 'easeOut' }}
               className="absolute left-1/2 top-[calc(100%+0.6rem)] z-50 w-[min(70rem,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden rounded-2xl border border-border-light bg-white shadow-[0_24px_70px_rgba(16,23,34,0.18)]"
+              onMouseLeave={() => setIsWhatWeDoOpen(false)}
             >
               <div className="flex items-center justify-between gap-4 border-b border-border-light bg-background-secondary px-5 py-4 sm:px-7">
                 <div className="flex items-center gap-2.5">
@@ -284,10 +285,10 @@ export function Header() {
                   href="/"
                   className="flex items-center hover:opacity-80 transition-opacity"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  aria-label="VYNTOR Technologies - Home"
+                  aria-label="vastverse - Home"
                 >
-                  <span className="brand-lockup brand-lockup--navbar" aria-hidden="true">
-                    <span className="brand-wordmark">vy<span className="brand-wordmark__arch" />tor</span>
+<span className="brand-lockup brand-lockup--navbar" aria-hidden="true">
+                    <span className="brand-wordmark">vastverse</span>
                     <span className="brand-tagline">innovation from vision</span>
                   </span>
                 </Link>
@@ -381,3 +382,5 @@ export function Header() {
     </header>
   );
 }
+
+

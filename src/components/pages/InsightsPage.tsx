@@ -178,7 +178,7 @@ const articles = [
 export function InsightsPage() {
   return (
     <>
-      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-24 lg:pt-32 pb-16 lg:pb-24" aria-labelledby="insights-hero-heading">
+      <section className="page-hero bg-gradient-to-b from-primary-50 to-white pt-20 lg:pt-28 pb-12 lg:pb-16" aria-labelledby="insights-hero-heading">
         <Container size="xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -189,7 +189,7 @@ export function InsightsPage() {
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
               Insights
             </span>
-            <h1 id="insights-hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary leading-tight mb-6">
+            <h1 id="insights-hero-heading" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary leading-tight mb-6">
               Technical Insights &{' '}
               <span className="text-primary-600">Thought Leadership</span>
             </h1>
@@ -200,7 +200,7 @@ export function InsightsPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16 lg:py-24" aria-labelledby="categories-heading">
+      <section className="bg-white py-12 lg:py-16" aria-labelledby="categories-heading">
         <Container size="xl">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 id="categories-heading" className="sr-only">Browse by Category</h2>
@@ -220,7 +220,7 @@ export function InsightsPage() {
             ))}
           </Flex>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6">
             {articles.slice(0, 2).map((article, index) => {
               return (
               <Reveal key={article.id} threshold={0.1} delay={index * 0.1}>
@@ -368,7 +368,7 @@ export function InsightsPage() {
             </Reveal>
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="mt-10 text-center">
             <motion.a
               href="/insights"
               initial={{ opacity: 0, y: 20 }}
@@ -383,7 +383,7 @@ export function InsightsPage() {
         </Container>
       </section>
 
-      <section className="bg-background-secondary py-16 lg:py-24" aria-labelledby="newsletter-heading">
+      <section className="bg-background-secondary py-12 lg:py-16" aria-labelledby="newsletter-heading">
         <Container size="lg">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -45,7 +45,7 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/75"
           >
             <span className="h-px w-8 bg-primary-400" />
-            vyntor Technologies
+            vastverse
           </motion.div>
 
           <motion.h1
@@ -94,7 +94,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: shouldReduceMotion ? 0 : 0.6, delay: shouldReduceMotion ? 0 : 0.4 }}
             className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/15 pt-5"
-            aria-label="VYNTOR capabilities"
+            aria-label="vastverse capabilities"
           >
             {capabilities.map(({ icon: Icon, label }) => (
               <li key={label} className="inline-flex items-center gap-2 text-sm text-white/70">
@@ -124,3 +124,6 @@ export function Hero() {
     </section>
   );
 }
+
+
+

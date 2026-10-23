@@ -46,7 +46,7 @@ export function Expertise() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-text-primary leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-primary leading-tight"
           >
             Core Capabilities That Drive Results
           </motion.h2>
